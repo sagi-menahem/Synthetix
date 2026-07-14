@@ -35,6 +35,18 @@ The platform lets a group:
 
 ---
 
+## How This Was Built
+
+Built solo, **AI-first**: I orchestrate AI coding agents (Claude Code, Codex) through a documented methodology rather than writing every line by hand — the engineering discipline is the point, not the speed.
+
+- **`AGENTS.md` as the single source of truth** — a rules file in the repo defines the architecture, conventions, and hard constraints every agent must obey: player fairness ratings never serialize into a client response, every Server Action re-checks auth and group role at the boundary, Row-Level Security enabled on every table as a second line of defense.
+- **Guardrail scripts & audit pipelines** — automated checks run on every change (Server Action authorization, RLS coverage, Hebrew/English i18n parity), so quality is enforced by tooling, not vigilance.
+- **The engineer decides, the agent executes** — every schema, data flow, and architectural choice on this page was designed and reviewed by me. Agents accelerate implementation; they never own the design.
+
+The result: one engineer delivering a production system at team-level velocity — with the discipline the decisions below reflect.
+
+---
+
 ## Features
 
 ### Match Nights
