@@ -33,13 +33,6 @@ The platform lets a group:
 - Keep a full history of nights, personal stats, and group leaderboards
 - Do all of it bilingually — Hebrew (RTL) and English, from day one
 
----
-
-## How This Was Built
-
-Built AI-first: I orchestrate AI coding agents (Claude Code, Codex) under guardrail scripts and audit pipelines that run on every change — but every schema, data flow, and architectural decision here was designed and reviewed by me. Agents accelerate implementation; they don't own the design.
-
----
 
 ## Features
 
